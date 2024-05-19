@@ -24,19 +24,21 @@ export default function DarkModeToggler({ className }) {
     }
   }, [darkMode]);
 
-  useEffect(() => {
-    const prefersDarkMode = window.matchMedia(
-      "(prefers-color-scheme: dark)"
-    ).matches;
-    toggleDarkModeAction(prefersDarkMode);
-  }, []);
+  // useEffect(() => {
+  //   if (darkMode === null) {
+  //     const prefersDarkMode = window.matchMedia(
+  //       "(prefers-color-scheme: dark)"
+  //     ).matches;
+  //     toggleDarkModeAction(prefersDarkMode);
+  //   }
+  // }, []);
 
   return (
     <span
-      className={`material-symbols-outlined h-8 w-8 text-2xl flex justify-center items-center rounded-full cursor-pointer ${className}`}
+      className={`${
+        darkMode ? "fa-moon" : "fa-sun"
+      } fa-solid  h-8 w-8 text-2xl flex justify-center items-center rounded-full cursor-pointer ${className} `}
       onClick={toggleDarkMode}
-    >{
-      darkMode ? "dark_mode" : "light_mode"
-    }</span>
+    ></span>
   );
 }

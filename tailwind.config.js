@@ -9,7 +9,7 @@ export default {
       colors: {
         'custom-dark': '#333',
         'custom-light-high': '#D9D9D9',
-        'custom-light-low': '#B8B3B3;',
+        'custom-light-low': '#B8B3B3',
         'custom-green': '#79AC78',
         'custom-brown': '#F3B062',
         'custom-cranberry': '#DF437E',
@@ -17,7 +17,7 @@ export default {
         'custom-crimson': '#DC143C',
         'primary': '#008DDA',
       },
-      height:{
+      height: {
         '200': '200px',
         '250': '250px',
         '350': '350px',
@@ -25,7 +25,10 @@ export default {
         '400': '400px',
         '450': '450px',
         '500': '500px',
-      }
+      },
+      animation: {
+        'spin-slow': 'spin 3s linear infinite',
+      },
     },
   },
   plugins: [],

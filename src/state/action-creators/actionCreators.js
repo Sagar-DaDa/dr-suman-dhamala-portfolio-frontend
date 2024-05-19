@@ -6,3 +6,12 @@ export const toggleDarkModeAction = (status) => {
         })
     }
 }
+
+export const showPageLoaderAction = (status) => {
+    return (dispatch) => {
+        dispatch({
+            type: 'pageLoader',
+            payload: status,
+        })
+    }
+}

@@ -49,7 +49,7 @@ const ParticlesComponent = (props) => {
       },
       particles: {
         number: {
-          value: 80,
+          value: 150,
           density: {
             enable: true,
             value_area: 800
@@ -74,12 +74,6 @@ const ParticlesComponent = (props) => {
           random: true,
           speed: 1,
           straight: false,
-        },
-        number: {
-          density: {
-            enable: true,
-          },
-          value: 150,
         },
         opacity: {
           value: 0.8,

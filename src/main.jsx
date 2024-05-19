@@ -8,9 +8,11 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import { Provider } from "react-redux";
-import {store} from "./state/store.js"
+import { store } from "./state/store.js";
 import Blog from "./components/Blog.jsx";
 import MainContainer from "./components/MainContainer.jsx";
+import PostView from "./components/PostView.jsx";
+import BlogHome from "./components/BlogHome.jsx";
 
 const router = createBrowserRouter([
   {
@@ -24,11 +26,25 @@ const router = createBrowserRouter([
       },
       {
         path: "/main",
-        element: <MainContainer/>,
+        element: <MainContainer />,
       },
       {
-        path: "/blog",
-        element: <Blog/>,
+        path: "/blog-home",
+        element: <BlogHome />,
+        children: [
+          {
+            index: true,
+            element: <Navigate to={`/blog-home/blog/all`} replace />,
+          },
+          {
+            path: "/blog-home/blog/:category",
+            element: <Blog />,
+          },
+          {
+            path: "/blog-home/post/:postId",
+            element: <PostView />,
+          },
+        ],
       },
     ],
   },

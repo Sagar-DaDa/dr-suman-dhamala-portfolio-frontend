@@ -35,7 +35,7 @@ export default function Home() {
               className={`${buttonSecondary} md:text-xl font-medium flex justify-center items-center`}
             >
               My Resume &nbsp;
-              <span className="material-symbols-outlined">arrow_downward</span>
+              <span className="fa-solid fa-user-tie"></span>
             </span>
           </Link>
 
@@ -50,7 +50,7 @@ export default function Home() {
               className={`${buttonPrimary} md:text-xl font-medium flex justify-center items-center`}
             >
               Contact Me &nbsp;
-              <span className="material-symbols-outlined">arrow_outward</span>
+              <span className="fa-solid fa-phone"></span>
             </span>
           </Link>
         </div>

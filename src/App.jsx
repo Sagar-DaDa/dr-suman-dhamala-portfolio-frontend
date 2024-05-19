@@ -1,15 +1,30 @@
-import Navbar from "./components/Navbar";
 import { Outlet } from "react-router-dom";
-import ParticlesComponent from "./components/ParticlesComponent";
-import { useSelector } from "react-redux";
 import Footer from "./components/Footer";
+import PageLoader from "./components/PageLoader";
+import { useDispatch, useSelector } from "react-redux";
+import { useEffect } from "react";
+import { bindActionCreators } from "redux";
+import { actionCreators } from "./state/state";
 
 function App() {
+  const dispatch = useDispatch();
+  const { showPageLoaderAction } = bindActionCreators(actionCreators, dispatch);
+  const isPageLoader = useSelector((state) => state.pageLoader);
+
+  useEffect(() => {
+    setTimeout(() => {
+      showPageLoaderAction(false);
+    }, 300);
+  }, [isPageLoader]);
+
   return (
-    <div className="font-source-sans">
-      <Outlet />
-      <Footer />
-    </div>
+    <>
+      {isPageLoader && <PageLoader />}
+      <div className={`${isPageLoader ? "hidden" : "block"} font-source-sans`}>
+        <Outlet />
+        <Footer />
+      </div>
+    </>
   );
 }
 
