@@ -1,6 +1,6 @@
-export const buttonPrimary = "bg-primary text-custom-light-high py-2 px-5 rounded-full hover:bg-custom-dark hover:ring-2 hover:ring-primary border border-primary cursor-pointer";
+export const buttonPrimary = "bg-primary text-custom-light-high py-2 px-5 rounded-full hover:bg-custom-dark hover:ring-1 hover:ring-primary border border-primary cursor-pointer";
 
-export const buttonSecondary = "cursor-pointer bg-custom-dark text-custom-light-low py-2 px-5 rounded-full hover:bg-custom-dark hover:ring-2 hover:ring-primary border border-primary";
+export const buttonSecondary = "cursor-pointer bg-custom-dark text-custom-light-low py-2 px-5 rounded-full hover:bg-custom-dark hover:ring-1 hover:ring-primary border border-primary";
 
 export const buttonOptional = "cursor-pointer bg-custom-light-high text-primary py-2 px-5 rounded-full hover:bg-custom-dark";
 
@@ -17,3 +17,10 @@ export const boxShadowSecondary = "shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_
 export const boxShadowOptional = "shadow-[inset_0px_0px_0px_1px_#00000024]";
 
 export const bgGradientPrimary = "bg-gradient-to-r from-primary to-slate-900";
+
+// Poftfolio Manager
+export const formStyle = "bg-custom-light-low bg-opacity-20 rounded-lg p-5 flex flex-col gap-5";
+
+export const inputStyle = "outline-none border rounded-lg p-2";
+
+export const dashboardRootDivStyle = "space-y-5 bg-custom-dark rounded-xl p-5";

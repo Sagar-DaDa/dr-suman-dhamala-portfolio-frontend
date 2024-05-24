@@ -29,6 +29,10 @@ export default {
       animation: {
         'spin-slow': 'spin 3s linear infinite',
       },
+      backgroundImage: {
+        'gradient-primary': 'radial-gradient(circle farthest-corner at 48.4% 47.5%, rgba(122,183,255,1) 0%, #008DDA 90%)',
+        'gradient-secondary': 'radial-gradient( circle 993px at 0.5% 50.5%,  rgba(137,171,245,0.37) 0%, rgba(245,247,252,1) 100.2% )',
+      },
     },
   },
   plugins: [],

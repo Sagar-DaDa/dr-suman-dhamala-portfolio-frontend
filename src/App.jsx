@@ -20,7 +20,7 @@ function App() {
   return (
     <>
       {isPageLoader && <PageLoader />}
-      <div className={`${isPageLoader ? "hidden" : "block"} font-source-sans`}>
+      <div className={`${isPageLoader ? "hidden" : "block"}`}>
         <Outlet />
         <Footer />
       </div>

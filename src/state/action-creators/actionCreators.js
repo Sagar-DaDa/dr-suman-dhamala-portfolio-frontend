@@ -15,3 +15,12 @@ export const showPageLoaderAction = (status) => {
         })
     }
 }
+
+export const titleOnDashboard = (dashTitle) => {
+    return (dispatch) => {
+        dispatch({
+            type: 'dashboardTitle',
+            payload: dashTitle
+        })
+    }
+}
