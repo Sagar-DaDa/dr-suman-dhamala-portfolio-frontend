@@ -16,6 +16,7 @@ export default function PortfolioManagement() {
   };
 
   useEffect(() => {
+    document.title = 'Portfolio Manager';
     if (showPopup) {
       document.addEventListener("mousedown", handleClickOutside);
     } else {
@@ -140,7 +141,7 @@ export default function PortfolioManagement() {
           </div>
         </div>
 
-        <div className="p-5 flex-grow overflow-y-auto">
+        <div className="p-5 flex-grow overflow-y-auto relative">
           <Outlet />
         </div>
       </div>

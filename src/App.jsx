@@ -12,6 +12,7 @@ function App() {
   const isPageLoader = useSelector((state) => state.pageLoader);
 
   useEffect(() => {
+    document.title = 'Dr. Suman Dhamala';
     setTimeout(() => {
       showPageLoaderAction(false);
     }, 300);
