@@ -125,7 +125,7 @@ export default function PortfolioManagement() {
             {showPopup && (
               <div
                 ref={popupRef}
-                className="absolute right-0 mt-2 w-40 text-sm p-3 rounded-xl bg-custom-dark text-center text-custom-light-high space-y-2"
+                className="z-10 absolute right-0 mt-2 w-40 text-sm p-3 rounded-xl bg-custom-dark bg-opacity-80 backdrop-blur-sm text-center text-custom-light-high space-y-2"
               >
                 <p className={`${onHoverNavLink} p-1 rounded cursor-pointer`}>
                   Admin Setup

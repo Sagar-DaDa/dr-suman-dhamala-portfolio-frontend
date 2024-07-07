@@ -109,6 +109,10 @@ const router = createBrowserRouter([
       },
     ]
   },
+  {
+    path: "/test",
+    element: <BlogManagement/>,
+  },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(

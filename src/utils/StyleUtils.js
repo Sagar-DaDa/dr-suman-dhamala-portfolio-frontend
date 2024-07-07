@@ -21,7 +21,7 @@ export const bgGradientPrimary = "bg-gradient-to-r from-primary to-slate-900";
 // Poftfolio Manager
 export const formStyle = "bg-custom-light-low bg-opacity-20 rounded-lg p-5 flex flex-col gap-2";
 
-export const inputStyle = "outline-none border rounded-lg p-2";
+export const inputStyle = "outline-none border rounded p-2";
 
 export const dashboardRootDivStyle = "space-y-5 bg-custom-dark rounded-xl p-5";
 
