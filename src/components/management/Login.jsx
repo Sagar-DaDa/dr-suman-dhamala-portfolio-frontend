@@ -9,7 +9,7 @@ import AdminRegistration from "./AdminRegistration";
 export default function Login() {
   document.title = 'Login';
   const [isPasswordVisible, setIsPasswordVisible] = useState(false);
-  const [isAdminExists, setIsAdminExists] = useState(true)
+  const [isAdminExists, setIsAdminExists] = useState(false)
   return (
     isAdminExists
     ?
